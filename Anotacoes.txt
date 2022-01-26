@@ -1,0 +1,5 @@
+++++++++++ PERSISTENCIA ++++++++++
+
+VOTO
+VotosPorCandidato
+-> na tela, pegarei os candidatos e para cada candidato pegarei os votos com base no candidatoId
