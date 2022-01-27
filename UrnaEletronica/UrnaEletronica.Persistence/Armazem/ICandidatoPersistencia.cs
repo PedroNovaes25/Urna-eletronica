@@ -9,8 +9,9 @@ namespace UrnaEletronica.Persistencia.Storage
 {
     public interface ICandidatoPersistencia
     {
-        Task<Candidato> CandidadoAdd(Candidato candidato);
+        Task CandidadoAdd(Candidato candidato);
         Task<bool> CandidatoDelete(Candidato candidato);
         Task<List<Candidato>> CandidatosGet();
+        Task<Candidato> CandidatoGet(int legendaCandidato);
     }
 }

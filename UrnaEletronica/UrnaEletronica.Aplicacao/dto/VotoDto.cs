@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UrnaEletronica.Dominio
+namespace UrnaEletronica.Aplicacao.dto
 {
-    public class Voto
+    public class VotoDto
     {
         public int CandidatoId { get; set; }
-        public Candidato Candidato { get; set; }
-        public DateTime DataDeVoto { get; set; }
+        public DateTime DataDeVoto { get { return DateTime.Today; } }
     }
 }

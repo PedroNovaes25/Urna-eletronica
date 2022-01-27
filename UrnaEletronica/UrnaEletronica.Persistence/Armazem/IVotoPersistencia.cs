@@ -9,7 +9,8 @@ namespace UrnaEletronica.Persistencia.Storage
 {
     public interface IVotoPersistencia
     {
-        Task<Voto> VotoAdd(Voto voto);
-        Task<List<Voto>> VotosPorCandidato(int candidatoId);
+        Task VotoAdd(Voto voto);
+        Task<List<Voto>> VotosPorCandidatoGet(int candidatoId);
+        Task<bool> VotosDelete();
     }
 }
