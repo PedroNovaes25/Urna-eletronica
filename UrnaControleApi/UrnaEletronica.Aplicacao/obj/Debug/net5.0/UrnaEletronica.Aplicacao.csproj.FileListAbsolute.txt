@@ -1,0 +1,17 @@
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\bin\Debug\net5.0\UrnaEletronica.Aplicacao.deps.json
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\bin\Debug\net5.0\UrnaEletronica.Aplicacao.dll
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\bin\Debug\net5.0\ref\UrnaEletronica.Aplicacao.dll
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\bin\Debug\net5.0\UrnaEletronica.Aplicacao.pdb
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\bin\Debug\net5.0\UrnaEletronica.Dominio.dll
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\bin\Debug\net5.0\UrnaEletronica.Persistencia.dll
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\bin\Debug\net5.0\UrnaEletronica.Persistencia.pdb
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\bin\Debug\net5.0\UrnaEletronica.Dominio.pdb
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\obj\Debug\net5.0\UrnaEletronica.Aplicacao.csproj.AssemblyReference.cache
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\obj\Debug\net5.0\UrnaEletronica.Aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\obj\Debug\net5.0\UrnaEletronica.Aplicacao.AssemblyInfoInputs.cache
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\obj\Debug\net5.0\UrnaEletronica.Aplicacao.AssemblyInfo.cs
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\obj\Debug\net5.0\UrnaEletronica.Aplicacao.csproj.CoreCompileInputs.cache
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\obj\Debug\net5.0\UrnaEletronica.Aplicacao.csproj.CopyComplete
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\obj\Debug\net5.0\UrnaEletronica.Aplicacao.dll
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\obj\Debug\net5.0\ref\UrnaEletronica.Aplicacao.dll
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Aplicacao\obj\Debug\net5.0\UrnaEletronica.Aplicacao.pdb
