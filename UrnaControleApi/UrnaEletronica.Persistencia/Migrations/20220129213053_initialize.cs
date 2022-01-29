@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace UrnaEletronica.Persistencia.Migrations
 {
-    public partial class criandoDatabase : Migration
+    public partial class initialize : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,15 +11,16 @@ namespace UrnaEletronica.Persistencia.Migrations
                 name: "Candidatos",
                 columns: table => new
                 {
-                    Legenda = table.Column<int>(type: "int", nullable: false)
+                    LegendaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     NomeVice = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DataDeRegistro = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    DataDeRegistro = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Legenda = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Candidatos", x => x.Legenda);
+                    table.PrimaryKey("PK_Candidatos", x => x.LegendaId);
                 });
 
             migrationBuilder.CreateTable(
@@ -38,19 +39,19 @@ namespace UrnaEletronica.Persistencia.Migrations
                         name: "FK_Votos_Candidatos_CandidatoId",
                         column: x => x.CandidatoId,
                         principalTable: "Candidatos",
-                        principalColumn: "Legenda",
+                        principalColumn: "LegendaId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
                 table: "Candidatos",
-                columns: new[] { "Legenda", "DataDeRegistro", "Nome", "NomeVice" },
-                values: new object[] { 1, new DateTime(2022, 1, 29, 0, 0, 0, 0, DateTimeKind.Local), "Branco", null });
+                columns: new[] { "LegendaId", "DataDeRegistro", "Legenda", "Nome", "NomeVice" },
+                values: new object[] { 1, new DateTime(2022, 1, 29, 0, 0, 0, 0, DateTimeKind.Local), null, "Branco", null });
 
             migrationBuilder.InsertData(
                 table: "Candidatos",
-                columns: new[] { "Legenda", "DataDeRegistro", "Nome", "NomeVice" },
-                values: new object[] { 2, new DateTime(2022, 1, 29, 0, 0, 0, 0, DateTimeKind.Local), "Nulo", null });
+                columns: new[] { "LegendaId", "DataDeRegistro", "Legenda", "Nome", "NomeVice" },
+                values: new object[] { 2, new DateTime(2022, 1, 29, 0, 0, 0, 0, DateTimeKind.Local), null, "Nulo", null });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Votos_CandidatoId",

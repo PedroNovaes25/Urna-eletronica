@@ -37,12 +37,12 @@ namespace UrnaControleApi.Controllers
             }
         }
 
-        [HttpGet("{legendaCandidato}")]
-        public async Task<IActionResult> Votos(int legendaCandidato)
+        [HttpGet("{legendaId}")]
+        public async Task<IActionResult> Votos(int legendaId)
         {
             try
             {
-                var votos = await _votoService.VotosPorCandidatoGet(legendaCandidato);
+                var votos = await _votoService.VotosPorCandidatoGet(legendaId);
                 if (votos == null) return NoContent();
 
                 return Ok(votos);

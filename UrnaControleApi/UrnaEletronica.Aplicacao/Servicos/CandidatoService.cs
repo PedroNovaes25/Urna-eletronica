@@ -28,7 +28,7 @@ namespace UrnaEletronica.Aplicacao.Servicos
                 if (!foiCriado)
                     throw new Exception($"Não foi possível registrar candidato {candidatoDto.Nome}");
                 
-                var retornoCadidato = await _candidatoPersistencia.CandidatoGet(candidato.Legenda);
+                var retornoCadidato = await _candidatoPersistencia.CandidatoGet(candidato.LegendaId);
 
                 return retornoCadidato.MapearParaDto();
             }
@@ -38,13 +38,13 @@ namespace UrnaEletronica.Aplicacao.Servicos
             }
         }
 
-        public async Task<bool> CandidatoDelete(CandidatoDto candidatoDto)
+        public async Task<bool> CandidatoDelete(int legendaId)
         {
             try
             {
-                var candidato = await _candidatoPersistencia.CandidatoGet(candidatoDto.Legenda);
+                var candidato = await _candidatoPersistencia.CandidatoGet(legendaId);
                 if (candidato == null)
-                    throw new Exception($"Não foi possível encontrar candidato com a legenda {candidatoDto.Legenda}");
+                    throw new Exception($"Não foi possível encontrar candidato com a legenda {legendaId}");
 
                 return await _candidatoPersistencia.CandidatoDelete(candidato);
             }
@@ -54,13 +54,13 @@ namespace UrnaEletronica.Aplicacao.Servicos
             }
         }
 
-        public async Task<CandidatoDto> CandidatoGet(int legendaCandidato)
+        public async Task<CandidatoDto> CandidatoGet(int legendaId)
         {
             try
             {
-                var candidatos = await _candidatoPersistencia.CandidatoGet(legendaCandidato);
+                var candidatos = await _candidatoPersistencia.CandidatoGet(legendaId);
                 if (candidatos == null)
-                    throw new Exception($"Não foi possível encontrar candidato com a legenda {legendaCandidato}");
+                    throw new Exception($"Não foi possível encontrar candidato com a legenda {legendaId}");
                 return candidatos.MapearParaDto();
             }
             catch (Exception ex)

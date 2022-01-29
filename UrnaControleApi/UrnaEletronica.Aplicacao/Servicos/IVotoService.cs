@@ -10,7 +10,7 @@ namespace UrnaEletronica.Aplicacao.Servicos
     public interface IVotoService
     {
         Task<bool> VotoAdd(VotoDto voto);
-        Task<List<VotoDto>> VotosPorCandidatoGet(int legendaCandidato);
+        Task<List<VotoDto>> VotosPorCandidatoGet(int legendaId);
         Task<bool> VotosDelete();
     }
 }

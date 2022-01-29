@@ -48,7 +48,7 @@ namespace UrnaEletronica.Aplicacao.Servicos
             {
                 var votosDoCandidato = await _votoPersistencia.VotosPorCandidatoGet(lengendaCandidato);
                 if (votosDoCandidato.Count == 0)
-                    throw new Exception($"Não foi encontrado votos para o candidado da legenda {lengendaCandidato}");
+                    return null;
                 return votosDoCandidato.MapearParaDto();
             }
             catch (Exception ex)

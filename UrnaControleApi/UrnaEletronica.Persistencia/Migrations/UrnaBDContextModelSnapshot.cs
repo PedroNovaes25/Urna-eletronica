@@ -21,7 +21,7 @@ namespace UrnaEletronica.Persistencia.Migrations
 
             modelBuilder.Entity("UrnaEletronica.Dominio.Candidato", b =>
                 {
-                    b.Property<int>("Legenda")
+                    b.Property<int>("LegendaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -29,26 +29,29 @@ namespace UrnaEletronica.Persistencia.Migrations
                     b.Property<DateTime>("DataDeRegistro")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Legenda")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NomeVice")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Legenda");
+                    b.HasKey("LegendaId");
 
                     b.ToTable("Candidatos");
 
                     b.HasData(
                         new
                         {
-                            Legenda = 1,
+                            LegendaId = 8,
                             DataDeRegistro = new DateTime(2022, 1, 29, 0, 0, 0, 0, DateTimeKind.Local),
                             Nome = "Branco"
                         },
                         new
                         {
-                            Legenda = 2,
+                            LegendaId = 9,
                             DataDeRegistro = new DateTime(2022, 1, 29, 0, 0, 0, 0, DateTimeKind.Local),
                             Nome = "Nulo"
                         });

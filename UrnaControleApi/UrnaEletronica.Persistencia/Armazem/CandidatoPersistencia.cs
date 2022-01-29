@@ -34,7 +34,7 @@ namespace UrnaEletronica.Persistencia.Armazem
         {
             IQueryable<Candidato> query = _context.Candidatos
             .Include(v => v.Votos);
-            query = query.AsNoTracking().Where(vt => vt.Legenda == legendaCandidato);
+            query = query.AsNoTracking().Where(vt => vt.LegendaId == legendaCandidato);
 
             return await query.FirstOrDefaultAsync();
         }

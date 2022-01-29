@@ -23,14 +23,14 @@ namespace UrnaEletronica.Persistencia._BDContexto
                     new Candidato 
                     {
                         Nome = "Branco",
-                        Legenda = 1,
+                        LegendaId = 8,
                         DataDeRegistro = DateTime.Today
                     },
                     new Candidato
                     {
                         Nome = "Nulo",
-                        Legenda = 2,
-                        DataDeRegistro = DateTime.Today
+                        LegendaId = 9,
+                        DataDeRegistro = DateTime.Today,
                     }
                 );
         }

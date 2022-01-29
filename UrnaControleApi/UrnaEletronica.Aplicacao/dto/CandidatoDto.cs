@@ -10,18 +10,20 @@ namespace UrnaEletronica.Aplicacao.dto
 {
     public class CandidatoDto
     {
+
+        public int LegendaId { get; set; }
+
         [Required(ErrorMessage = "O campo {0} é obrigatório"),
         StringLength(50, MinimumLength = 3, ErrorMessage = "Intervalo permitido de 3 a 50 caracteres.")]
         public string Nome { get; set; }
-        
         [Required(ErrorMessage = "O campo {0} é obrigatório"),
         StringLength(50, MinimumLength = 3, ErrorMessage = "Intervalo permitido de 3 a 50 caracteres.")]
         public string NomeVice { get; set; }
-
+        public DateTime DataDeRegistro { get; set; }
         [Required(ErrorMessage = "O campo {0} é obrigatório"),
-        Range(10, 99, ErrorMessage = "{0} a legenda para prefeito é são de dois dígitos")]
-        public int Legenda { get; set; }
-        public List<VotoDto> Votos { get; set; }
+        StringLength(4, MinimumLength = 2, ErrorMessage = "A legenda deve ter entre 2 e 4 carácteres ")]
+        public string Legenda { get; set; }
+        public virtual List<VotoDto> Votos { get; set; }
 
     }
 
@@ -34,6 +36,7 @@ namespace UrnaEletronica.Aplicacao.dto
             {
                 Nome = candidatoDto.Nome,
                 NomeVice = candidatoDto.NomeVice,
+                LegendaId = candidatoDto.LegendaId,
                 Legenda = candidatoDto.Legenda,
                 Votos = candidatoDto.Votos.MapearParaModelo()
             };
@@ -59,8 +62,11 @@ namespace UrnaEletronica.Aplicacao.dto
                 Nome = candidato.Nome,
                 NomeVice = candidato.NomeVice,
                 Legenda = candidato.Legenda,
+                LegendaId = candidato.LegendaId,
+                
                 Votos = candidato.Votos.MapearParaDto()
             };
+            candidatoDto.DataDeRegistro = candidato.DataDeRegistro;
 
             return candidatoDto;
         }

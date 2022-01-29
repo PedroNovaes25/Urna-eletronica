@@ -35,12 +35,12 @@ namespace UrnaControleApi.Controllers
             }
         }
 
-        [HttpDelete]
-        public async Task<IActionResult> CandidaturaRemover([FromBody] CandidatoDto candidatoDto)
+        [HttpDelete("{legendaId}")]
+        public async Task<IActionResult> CandidaturaRemover(int legendaId)
         {
             try
             {
-                return await _candidatoService.CandidatoDelete(candidatoDto) ? Ok(true) : throw new Exception("Ocorreu um problem não específico ao tentar remover candidatura.");
+                return await _candidatoService.CandidatoDelete(legendaId) ? Ok(true) : throw new Exception("Ocorreu um problem não específico ao tentar remover candidatura.");
 
             }
             catch (Exception ex)
@@ -48,12 +48,12 @@ namespace UrnaControleApi.Controllers
                 return this.StatusCode(StatusCodes.Status500InternalServerError, $"Erro ao tentar remover candidatura. Erro: {ex.Message}");
             }
         }
-        [HttpGet("{legendaCandidato}")]
-        public async Task<IActionResult> Candidato(int legendaCandidato)
+        [HttpGet("{legendaId}")]
+        public async Task<IActionResult> Candidato(int legendaId)
         {
             try
             {
-                var candidato = await _candidatoService.CandidatoGet(legendaCandidato);
+                var candidato = await _candidatoService.CandidatoGet(legendaId);
                 if (candidato == null) return NoContent();
 
                 return Ok(candidato);

@@ -10,8 +10,8 @@ namespace UrnaEletronica.Aplicacao.Servicos
     public interface ICandidatoService
     {
         Task<CandidatoDto> CandidadoAdd(CandidatoDto candidato);
-        Task<bool> CandidatoDelete(CandidatoDto candidato);
+        Task<bool> CandidatoDelete(int legendaId);
         Task<List<CandidatoDto>> CandidatosGet();
-        Task<CandidatoDto> CandidatoGet(int legendaCandidato);
+        Task<CandidatoDto> CandidatoGet(int legendaId);
     }
 }
