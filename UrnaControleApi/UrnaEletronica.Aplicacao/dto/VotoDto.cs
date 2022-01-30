@@ -12,6 +12,7 @@ namespace UrnaEletronica.Aplicacao.dto
     {
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public int CandidatoId { get; set; }
+        public virtual Candidato Candidato { get; set; }
     }
 
 
