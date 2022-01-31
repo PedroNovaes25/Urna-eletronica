@@ -23,8 +23,8 @@ export class CandidatoService {
     // return this.http.put<boolean>(`${this.baseUrl}`, voto).pipe(take(1));
   }
 
-  public CandidaturaRemover (): Observable<boolean>{
-    return this.http.delete<boolean>(`${this.baseURL}`);
+  public CandidaturaRemover (legendaId: number): Observable<boolean>{
+    return this.http.delete<boolean>(`${this.baseURL}/${legendaId}`);
     // return this.http.delete<any>(`${this.baseUrl}/${eventoId}/${id}`).pipe(take(1));
   }
 

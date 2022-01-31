@@ -1,5 +1,18 @@
-<h1>Candidatos</h1>
-<hr>
+<app-titulo [titulo]="'Candidatos'"></app-titulo>
+
+<div class="card rounded shadow-sm p-3">
+
+  <div class="d-flex justify-content-between mb-3">
+    <a class="d-flex btn btn-outline-primary" (click)="reiniciarVotacao()">
+      <i class="fa fa-plus-circle my-1"></i>
+      <b class="ml-1 d-none d-sm-block">Reiniciar Votação</b>
+    </a>
+
+    <a class="d-flex btn btn-outline-primary" routerLink="../cadastroCandidato">
+      <i class="fa fa-plus-circle my-1"></i>
+      <b class="ml-1 d-none d-sm-block">Novo</b>
+    </a>
+  </div>
 
 <table class="table table-striped">
   <thead class="thead table-dark">
@@ -7,8 +20,6 @@
       <th>N° Candidato</th>
       <th>Nome</th>
       <th>Vice</th>
-      <th>Legenda</th>
-      <th>Votos</th>
       <th>Opções</th>
     </tr>
   </thead>
@@ -18,10 +29,11 @@
       <td>{{ candidato.legendaId }}</td>
       <td>{{ candidato.nome }}</td>
       <td>{{ candidato.nomeVice }}</td>
-      <td>{{ candidato.legenda }}</td>
-      <td>{{ candidato.votos.length }}</td>
       <td>
-        <button type="button" class="btn btn-danger btn-sm">Deletar</button>
+        <button type="button" class="btn btn-danger btn-sm" (click)="openModal($event, template, candidato.legendaId)">
+          <i class="fa fa-trash"></i>
+          Deletar
+        </button>
       </td>
     </tr>
   </tbody>
@@ -33,37 +45,15 @@
     </tr>
   </tfoot>
 </table>
-
-
-
-<h1>Votação</h1>
-<hr>
-
-
-
-<h3>Filtro: {{filtroCandidato}}</h3>
-
-<div action="" class="form-inline">
-  <div class="form-group mb-2 form-inline">
-    <input type="text" class="form-control mr-2 " [(ngModel)]="filtroDeCandidatoA">
-    <input type="text" class="form-control mr-2" [(ngModel)]="filtroDeCandidatoB">
-  </div>
-
-  <div>
-    <p><b>Nome:</b> {{canditoFiltrado.nome}}</p>
-    <p><b>Vice:</b> {{canditoFiltrado.nomeVice}}</p>
-    <p><b>Legenda:</b> {{canditoFiltrado.legenda}}</p>
-  </div>
-
-    <tfoot>
-      <tr>
-        <td colspan="8" class="text-center">
-            <h3>Voto nulo!</h3>
-        </td>
-      </tr>
-    </tfoot>
-
-  <button class="btn btn-light">Branco</button>
-  <button class="btn btn-warning">Corrige</button>
-  <button class="btn btn-success">Confirma</button>
 </div>
+
+<ng-template #template>
+  <div class="modal-body text-center">
+    <p>Você quer deletar candidato?</p>
+    <button type="button" class="btn btn-default" (click)="confirm()" >Sim</button>
+    <button type="button" class="btn btn-primary" (click)="decline()" >Não</button>
+  </div>
+</ng-template>
+
+
+

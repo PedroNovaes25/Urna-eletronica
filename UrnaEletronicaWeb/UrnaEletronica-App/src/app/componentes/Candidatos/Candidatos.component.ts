@@ -1,8 +1,11 @@
 import { HttpClientModule } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { Candidato } from 'src/app/models/Candidato';
 
 import { CandidatoService } from 'src/app/service/Candidato.service';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { VotoService } from 'src/app/service/Voto.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-Candidatos',
@@ -10,12 +13,15 @@ import { CandidatoService } from 'src/app/service/Candidato.service';
   styleUrls: ['./Candidatos.component.scss']
 })
 export class CandidatosComponent implements OnInit {
-
+  modalRef?: BsModalRef;
   public candidatos: Candidato[] =[];
+  public legendaId: number = 0;
 
   constructor(
-    private http: HttpClientModule,
-     private candidatoService: CandidatoService) { }
+     private candidatoService: CandidatoService,
+     private votoService: VotoService,
+     private modalService: BsModalService,
+     private toastr: ToastrService) { }
 
   ngOnInit() {
     this.CarregarCandidatos();
@@ -25,49 +31,58 @@ export class CandidatosComponent implements OnInit {
 
    this.candidatoService.Candidatos().subscribe(
      (candidato: Candidato[])=>{
-       this.candidatos = candidato;
+
+    candidato.forEach(cand =>{
+      if(cand.legendaId > 9){
+        this.candidatos.push(cand);
+      }
+    }
+     );
+
+      //  this.candidatos = candidato;
      },
      (error: any)=>{console.error(error)}
    ).add()
 
   }
 
-  private _filtroCandidato: string = '';
-
-  private _filtroA: string = '';
-  private _filtroDeCandidatoA: string = '';
-  public set filtroDeCandidatoA(filtro: string){
-    this._filtroA = filtro;
-    this._filtroCandidato = filtro + this._filtroB;
-    this.buscarCandidato(parseInt(this._filtroCandidato));
-  }
-
-  public get filtroDeCandidatoA(){
-    return this.filtroDeCandidatoB;
-  }
-
-  private _filtroB: string = '';
-  private _filtroDeCandidatosB: string = '';
-  public set filtroDeCandidatoB(filtro: string){
-    this._filtroB = filtro;
-    this._filtroCandidato = this._filtroA + filtro;
-    this.buscarCandidato(parseInt(this._filtroCandidato));
-  }
-
-
-  public get filtroCandidato(){
-    return this._filtroCandidato;
-  }
-
-  canditoFiltrado = {} as Candidato;
-  buscarCandidato(filterId: number): any{
-    this.canditoFiltrado = {} as Candidato;
-    this.candidatoService.Candidato(filterId).subscribe(
-      (candidato: Candidato) => {
-          this.canditoFiltrado = candidato;
+  public reiniciarVotacao():void{
+    this.votoService.reiniciarVotacao().subscribe(
+      () => {
+        this.toastr.success('Votação reiniciada!', 'Sucesso');
       },
-      (error: Error) => {console.error(error)}
-    ).add(()=>{});
+      (error: Error) => {
+        this.toastr.error('Não foi possível reiniciar votação!', 'Error');
+        console.error(error)
+      }
+      );
+  }
+
+
+  openModal(event: any,template: TemplateRef<any>, legendaId: number) {
+    event.stopPropagation();
+    this.legendaId = legendaId;
+    this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
+  }
+
+  confirm(): void {
+    this.modalRef?.hide();
+
+    this.candidatoService.CandidaturaRemover(this.legendaId).subscribe(
+      () => {
+
+        this.toastr.success('Candidato deletado com sucesso!', 'Sucesso');
+        this.CarregarCandidatos();
+      },
+      (error: Error) => {
+        this.toastr.error('Erro ao deletar candidato!', 'Error');
+        console.error(error)
+      },
+    );
+  }
+
+  decline(): void {
+    this.modalRef?.hide();
   }
 
 }

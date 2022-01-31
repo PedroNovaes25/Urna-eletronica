@@ -5820,11 +5820,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj",
+      "projectUniqueName": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj",
       "projectName": "UrnaEletronica.Persistencia",
-      "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj",
+      "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj",
       "packagesPath": "C:\\Users\\pedro.novaes\\.nuget\\packages\\",
-      "outputPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\obj\\",
+      "outputPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro.novaes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5841,8 +5841,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj": {
-              "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj"
+            "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj": {
+              "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj"
             }
           }
         }

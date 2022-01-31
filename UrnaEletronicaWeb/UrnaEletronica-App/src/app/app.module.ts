@@ -14,8 +14,12 @@ import { VotacaoComponent } from './componentes/Votacao/Votacao.component';
 
 import {CandidatoService} from './service/Candidato.service';
 import {VotoService} from './service/Voto.service';
-import { NavComponent } from './nav/nav.component';
-import { FormsModule } from '@angular/forms';
+import { NavComponent } from '../shared/nav/nav.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { TituloComponent } from 'src/shared/titulo/titulo.component';
+
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -23,15 +27,24 @@ import { FormsModule } from '@angular/forms';
 
     ApuracaoComponent,
     CandidatosComponent,
+    TituloComponent,
     VotacaoComponent,
       NavComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true,
+      progressBar: true
+    }),
   ],
   providers: [
         CandidatoService, //Permite a classe ´EventoService´ ser injetada por qualquer um

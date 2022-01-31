@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7GuvjVjOkipEa37+IK6RbSFYcEW7YgnMrewdWxoWZFp+HKb06Z0xKXLHVx+EwDxvKzb7Z5N5AaD8UOa+dIvY9w==",
+  "dgSpecHash": "FnJgwmNsY7jK1y+OYBgCORkKZiNFqn4HK8H6+QBIDCF/TgnHWEqAE7zjVEIEtsVkotXILjuXfEusjl6QiSsJJg==",
   "success": true,
-  "projectFilePath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj",
+  "projectFilePath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro.novaes\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pedro.novaes\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

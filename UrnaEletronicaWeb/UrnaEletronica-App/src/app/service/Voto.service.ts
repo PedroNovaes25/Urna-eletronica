@@ -20,8 +20,8 @@ export class VotoService {
     // return this.http.put<boolean>(`${this.baseUrl}`, voto).pipe(take(1));
   }
 
-  public ReiniciarVotacao (): Observable<boolean>{
-    return this.http.delete<boolean>(`${this.baseUrl}`);
+  public reiniciarVotacao (): Observable<boolean>{
+    return this.http.delete<boolean>(`${this.baseUrl}/reiniciar`);
     // return this.http.delete<any>(`${this.baseUrl}/${eventoId}/${id}`).pipe(take(1));
   }
 

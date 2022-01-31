@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jw+deqyAd72Lh6IYHM0FlZK2yRBsBu4oXMRLf0Vjk5vI9M1b24w0JPzv7ZVMQ9TjK383ECxgPYSkClu9gMGlhg==",
+  "dgSpecHash": "2cWJojpIc0uOMaXmP9WLRx3IpyKTZyQocvFv8ZPzx1rODdGKeIuX238YK+fzsW6dGU2gcNXnjbbAV0EAqZE7qQ==",
   "success": true,
-  "projectFilePath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaControleApi\\UrnaControleApi.csproj",
+  "projectFilePath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaControleApi\\UrnaControleApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro.novaes\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pedro.novaes\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.9\\microsoft.aspnetcore.jsonpatch.5.0.9.nupkg.sha512",
