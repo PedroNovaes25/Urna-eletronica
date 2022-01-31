@@ -29,6 +29,8 @@ export class CandidatosComponent implements OnInit {
 
   public CarregarCandidatos(): void{
 
+    this.candidatos = [];
+
    this.candidatoService.Candidatos().subscribe(
      (candidato: Candidato[])=>{
 
