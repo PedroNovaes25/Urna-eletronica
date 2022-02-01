@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E11UzwRNPaI1iTIsyIT08g+GMh/1sO/sqmJ3Bw4GL/tFr/b72U9yWJ9wY85O3nYyBhbT4xrAiKvdCjyGkQ/7JA==",
+  "dgSpecHash": "XUsG5HyGIXUpEMU+BnUP3f/I7tmIOdvpd1y9uA8NUK6YUsB7xtBSZpoWHrqHcWrrl3nsa2Y2R/5tRJosy+l01A==",
   "success": true,
-  "projectFilePath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj",
+  "projectFilePath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro.novaes\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\pedro.novaes\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

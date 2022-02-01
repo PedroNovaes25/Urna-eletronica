@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj": {}
+    "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj": {}
   },
   "projects": {
-    "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj": {
+    "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj",
+        "projectUniqueName": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj",
         "projectName": "UrnaEletronica.Aplicacao",
-        "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj",
+        "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj",
         "packagesPath": "C:\\Users\\pedro.novaes\\.nuget\\packages\\",
-        "outputPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Aplicacao\\obj\\",
+        "outputPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Aplicacao\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro.novaes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj": {
-                "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj"
+              "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj": {
+                "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj": {
+    "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj",
+        "projectUniqueName": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj",
         "projectName": "UrnaEletronica.Dominio",
-        "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj",
+        "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj",
         "packagesPath": "C:\\Users\\pedro.novaes\\.nuget\\packages\\",
-        "outputPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Dominio\\obj\\",
+        "outputPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro.novaes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -116,14 +116,14 @@
         }
       }
     },
-    "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj": {
+    "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj",
+        "projectUniqueName": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj",
         "projectName": "UrnaEletronica.Persistencia",
-        "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj",
+        "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj",
         "packagesPath": "C:\\Users\\pedro.novaes\\.nuget\\packages\\",
-        "outputPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\obj\\",
+        "outputPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pedro.novaes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -140,8 +140,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj": {
-                "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj"
+              "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj": {
+                "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Dominio\\UrnaEletronica.Dominio.csproj"
               }
             }
           }

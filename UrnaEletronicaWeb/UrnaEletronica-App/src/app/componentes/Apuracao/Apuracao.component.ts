@@ -26,7 +26,8 @@ export class ApuracaoComponent implements OnInit {
       },
       (error: any)=>{console.error(error)}
     ).add()
-
    }
+
+
 
 }

@@ -12,14 +12,15 @@ import { ApuracaoComponent } from './componentes/Apuracao/Apuracao.component';
 import { CandidatosComponent } from './componentes/Candidatos/Candidatos.component';
 import { VotacaoComponent } from './componentes/Votacao/Votacao.component';
 
-import {CandidatoService} from './service/Candidato.service';
-import {VotoService} from './service/Voto.service';
+import { CandidatoService } from './service/Candidato.service';
+import { VotoService } from './service/Voto.service';
 import { NavComponent } from '../shared/nav/nav.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { TituloComponent } from 'src/shared/titulo/titulo.component';
 
 import { ToastrModule } from 'ngx-toastr';
+import { CadastroCandidatoComponent } from './componentes/cadastroCandidato/cadastroCandidato.component';
 
 @NgModule({
   declarations: [
@@ -29,15 +30,16 @@ import { ToastrModule } from 'ngx-toastr';
     CandidatosComponent,
     TituloComponent,
     VotacaoComponent,
+    CadastroCandidatoComponent,
       NavComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule,
     ModalModule.forRoot(),
     ToastrModule.forRoot({
       timeOut: 3000,

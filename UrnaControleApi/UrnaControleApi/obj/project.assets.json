@@ -5746,11 +5746,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaControleApi\\UrnaControleApi.csproj",
+      "projectUniqueName": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaControleApi\\UrnaControleApi.csproj",
       "projectName": "UrnaControleApi",
-      "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaControleApi\\UrnaControleApi.csproj",
+      "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaControleApi\\UrnaControleApi.csproj",
       "packagesPath": "C:\\Users\\pedro.novaes\\.nuget\\packages\\",
-      "outputPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaControleApi\\obj\\",
+      "outputPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaControleApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro.novaes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5767,11 +5767,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj": {
-              "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj"
+            "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj": {
+              "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Aplicacao\\UrnaEletronica.Aplicacao.csproj"
             },
-            "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj": {
-              "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleAPI\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj"
+            "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj": {
+              "projectPath": "D:\\PedroNovaes\\Aprendizagem\\Desafio\\Urna-eletronica\\UrnaControleApi\\UrnaEletronica.Persistencia\\UrnaEletronica.Persistencia.csproj"
             }
           }
         }

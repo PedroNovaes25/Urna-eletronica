@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Candidato } from 'src/app/models/Candidato';
 import { Voto } from 'src/app/models/Voto';
@@ -13,6 +14,7 @@ import { VotoService } from 'src/app/service/Voto.service';
 export class VotacaoComponent implements OnInit {
 
   constructor(private candidatoService: CandidatoService,
+    private router: Router,
     private votoService: VotoService,
     private toastr: ToastrService
     ) { }
@@ -74,6 +76,7 @@ export class VotacaoComponent implements OnInit {
       this.votoService.Votar(this.voto).subscribe(
         () => {
           this.toastr.success('Voto confirmado!', 'Sucesso');
+          this.router.navigate([`apuracao`]);
         },
         (error: Error) => {
           this.toastr.error('Erro ao votar', 'Error');
@@ -86,7 +89,6 @@ export class VotacaoComponent implements OnInit {
   }
 
   public corrigir():void{
-    // this.form.reset()
   }
 
   public votar():void{
@@ -97,6 +99,7 @@ export class VotacaoComponent implements OnInit {
       this.votoService.Votar(this.voto).subscribe(
         () => {
           this.toastr.success('Voto confirmado!', 'Sucesso');
+          this.router.navigate([`apuracao`]);
         },
         (error: Error) => {
           this.toastr.error('Erro ao votar', 'Error');
