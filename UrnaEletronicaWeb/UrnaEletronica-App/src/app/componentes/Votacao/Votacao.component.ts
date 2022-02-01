@@ -85,10 +85,14 @@ export class VotacaoComponent implements OnInit {
         }
       );
     }
-
   }
 
   public corrigir():void{
+
+    this.router.navigate(['votacao'])
+  .then(() => {
+    window.location.reload();
+  });
   }
 
   public votar():void{
