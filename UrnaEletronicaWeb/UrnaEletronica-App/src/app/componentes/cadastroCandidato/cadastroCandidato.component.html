@@ -1,0 +1,61 @@
+<h3>Candidatura</h3>
+
+<div class="card rounded shadow-sm">
+
+  <form class="p-1"[formGroup]="form">
+  <div class="form-group  p-3">
+
+      <div class="col-md-6 pe-3">
+        <label class="form-label">Nome</label>
+        <input type="text"
+        [ngClass]="{'is-invalid': f.nome.errors && f.nome.touched}"
+        class="form-control
+        "formControlName = "nome" placeholder="nome">
+        <div *ngIf="f.nome.errors?.required && f.nome.touched" class="invalid-feedback">
+          Nome é obrigatório
+        </div>
+
+        <div *ngIf="f.nome.errors?.minlength && f.nome.touched" class="invalid-feedback">
+          Nome deve ter entre 4 e 50 caractéres
+        </div>
+      </div>
+
+      <div class="col-md-6 pe-3">
+        <label class="form-label">Nome Vice</label>
+        <input type="text"
+        [ngClass]="{'is-invalid': f.nomeVice.errors && f.nomeVice.touched}"
+        class="form-control
+        "formControlName = "nomeVice" placeholder="vice">
+        <div *ngIf="f.nomeVice.errors?.required && f.nomeVice.touched" class="invalid-feedback">
+          Nome Vice é obrigatório
+        </div>
+
+        <div *ngIf="f.nomeVice.errors?.minlength && f.nomeVice.touched" class="invalid-feedback">
+          Nome Vice deve ter entre 4 e 50 caractéres
+        </div>
+      </div>
+
+      <div class="col-md-6 pe-3">
+        <label class="form-label">Legenda</label>
+        <input type="text"
+        [ngClass]="{'is-invalid': f.legenda.errors && f.legenda.touched}"
+        class="form-control
+        "formControlName = "legenda" placeholder="Legenda partidária">
+        <div *ngIf="f.legenda.errors?.required && f.legenda.touched" class="invalid-feedback">
+          Legenda é obrigatório
+        </div>
+
+        <div *ngIf="f.legenda.errors?.minlength && f.legenda.touched" class="invalid-feedback">
+          Legenda deve ter entre 2 e 4 caractéres
+        </div>
+      </div>
+
+      <div class="d-flex mt-3 ">
+        <button [disabled]="!form.valid" class="btn btn-outline-primary" (click)="registrarCandidato()">
+          <!-- <span class="spinner-border spinner-border-sm me-1"></span> -->
+          Salvar Evento
+        </button>
+      </div>
+  </div>
+</form>
+</div>

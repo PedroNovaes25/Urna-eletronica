@@ -1,0 +1,34 @@
+<app-titulo [titulo]="'Votação'"></app-titulo>
+
+
+<div class="card rounded shadow-sm p-3">
+<!-- <h3>Filtro: {{filtroCandidato}}</h3> -->
+
+<div action="" class="form-group">
+  <h2 class="mb-5" for="">Prefeito</h2>
+  <div class="form-group mb-2">
+    <input type="text" class="form-inline col-md-1" [(ngModel)]="filtroDeCandidatoA">
+    <input type="text" class="form-inline col-md-1" [(ngModel)]="filtroDeCandidatoB">
+  </div>
+
+  <div *ngIf="votoValido && candidatoFiltrado.legendaId !== 9 && candidatoFiltrado.legendaId !== 8">
+    <p><b>Nome:</b> {{candidatoFiltrado.nome}}</p>
+    <p><b>Vice:</b> {{candidatoFiltrado.nomeVice}}</p>
+    <p><b>Legenda:</b> {{candidatoFiltrado.legenda}}</p>
+  </div>
+
+    <tfoot *ngIf="!votoValido && filtroCandidato!=''">
+      <tr>
+        <td colspan="8" class="text-center">
+            <h3>Voto nulo!</h3>
+        </td>
+      </tr>
+    </tfoot>
+
+  <button class="btn btn-light" (click)="votoEmbranco()">Branco</button>
+  <button class="btn btn-warning" (click)="corrigir()">Corrige</button>
+  <button class="btn btn-success" (click)="votar()">Confirma</button>
+</div>
+</div>
+
+

@@ -1,0 +1,12 @@
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\bin\Debug\net5.0\UrnaEletronica.Dominio.deps.json
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\bin\Debug\net5.0\UrnaEletronica.Dominio.dll
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\bin\Debug\net5.0\ref\UrnaEletronica.Dominio.dll
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\bin\Debug\net5.0\UrnaEletronica.Dominio.pdb
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\obj\Debug\net5.0\UrnaEletronica.Dominio.csproj.AssemblyReference.cache
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\obj\Debug\net5.0\UrnaEletronica.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\obj\Debug\net5.0\UrnaEletronica.Dominio.AssemblyInfoInputs.cache
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\obj\Debug\net5.0\UrnaEletronica.Dominio.AssemblyInfo.cs
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\obj\Debug\net5.0\UrnaEletronica.Dominio.csproj.CoreCompileInputs.cache
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\obj\Debug\net5.0\UrnaEletronica.Dominio.dll
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\obj\Debug\net5.0\ref\UrnaEletronica.Dominio.dll
+D:\PedroNovaes\Aprendizagem\Desafio\Urna-eletronica\UrnaControleApi\UrnaEletronica.Dominio\obj\Debug\net5.0\UrnaEletronica.Dominio.pdb

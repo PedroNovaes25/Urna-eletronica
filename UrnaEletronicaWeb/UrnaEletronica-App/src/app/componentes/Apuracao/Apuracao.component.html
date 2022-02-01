@@ -1,0 +1,31 @@
+
+<app-titulo [titulo]="'Apuração'"></app-titulo>
+
+<div class="card rounded shadow-sm p-3">
+<table class="table table-striped">
+  <thead class="thead table-dark">
+    <tr>
+      <th>N° Candidato</th>
+      <th>Nome</th>
+      <th>Vice</th>
+      <th>Votos</th>
+    </tr>
+  </thead>
+
+  <tbody *ngIf="candidatos && candidatos.length">
+    <tr *ngFor="let candidato of candidatos"  style="cursor: pointer;">
+      <td>{{ candidato.legendaId }}</td>
+      <td>{{ candidato.nome }}</td>
+      <td>{{ candidato.nomeVice }}</td>
+      <td>{{ candidato.votos.length }}</td>
+    </tr>
+  </tbody>
+  <tfoot *ngIf="!candidatos.length">
+    <tr>
+      <td colspan="8" class="text-center">
+          <h3>Nenhum candidato encontrado!</h3>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+</div>
